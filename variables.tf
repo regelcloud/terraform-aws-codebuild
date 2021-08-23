@@ -1,11 +1,5 @@
 variable "environment_variables" {
-  type = list(object(
-    {
-      name  = string
-      value = string
-      type  = string
-  }))
-
+  type = list
   default = [
     {
       name  = "NO_ADDITIONAL_BUILD_VARS"
